@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "csv2sitemap"
+version = "0.1.0"
+description = "CSVで渡されたURLをSitemapに変換するだけのツール"
+authors = ["Tomoharu Fujita <tomoharu.fujita@connecty.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^1.5.2"
+fire = "^0.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
