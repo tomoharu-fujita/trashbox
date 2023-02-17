@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .highlight {
+        border: 1px solid red;
+        position: relative;
+      }
+
+      .label {
+        position: absolute;
+        top: -75%;
+        left: 0.2rem;
+        color: rgba(217, 217, 227, var(--tw-text-opacity));
+
+        border: 0 solid red;
+        background-color: red;
+        box-sizing: border-box;
+        font-size: 0.75rem;
+        padding: 0 0.3rem 0;
+        border-radius: 0.15rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is some text that we want to highlight.</p>
+
+    <script>
+      // ハイライトする要素を取得します。
+      var elementToHighlight = document.getElementsByTagName("p")[0];
+
+      // 要素にクラスを追加します。
+      elementToHighlight.classList.add("highlight");
+
+      // ラベルの要素を作成します。
+      var label = document.createElement("div");
+      label.classList.add("label");
+      label.textContent = "Label";
+
+      // ハイライトされた要素にラベルを追加します。
+      elementToHighlight.appendChild(label);
+    </script>
+  </body>
+</html>
